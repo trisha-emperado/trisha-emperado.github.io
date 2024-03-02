@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/html-css.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="icon"
+      href="../images/trisha-emoji-icon.png"
+      type="image/icon type"
+    />
+    <!--Arapey Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Playfair Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--EB Garamond Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Karla Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Relative, Absolute, Fixed Positioning</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header-top-space"></div>
+    <div class="header-container">
+      <h1>Relative, Absolute, Fixed Positioning</h1>
+      <img
+        class="header-img"
+        src="../images/position-1.jpeg"
+        alt="photo of boxes stacked on top of each other"
+      />
+      <p class="blog-date">FEBRUARY 29, 2024</p>
+    </div>
+
+    <!-- What is Position-->
+    <div class="body">
+      <h2 class="body-header">What is position?</h2>
+      <p class="body-paragraph">
+        <code>position</code> is a CSS (Cascading Style Sheets) element, and as
+        the name of the element suggests, <code>position</code> specifies how
+        the element should be <em>positioned</em> in a document.
+      </p>
+      <!-- Normal Flow of a Document-->
+      <h2 class="body-header">Normal Flow of a Document</h2>
+      <p class="body-paragraph">
+        Before looking at position elements, I think it is important to
+        understand the <strong>normal flow</strong> of a document.
+      </p>
+      <p class="body-paragraph">
+        An HTML document without any CSS is rendered on a browser by the order
+        that the HTML is written. HTML elements such as
+        <code> &lt;div&gt;&lt;/div&gt;</code> ,
+        <code> &lt;li&gt;&lt;/li&gt;</code>,
+        <code> &lt;p&gt;&lt;/p&gt; </code>(and many more) are
+        <strong>block</strong> elements which means it's space that it takes up
+        on a webpage always starts on a new line and fills up the horizontal
+        space from left to right on a webpage (full width of the window). Hence,
+        a <strong>block</strong> element written on HTML followed by another
+        block element, the normal flow is from top to down.
+      </p>
+      <p class="body-paragraph">
+        While the HTML elements of
+        <code>&lt;a&gt;&lt;/a&gt;</code>,
+        <code>&lt;span&gt;&lt;/span&gt;</code>,
+        <code>&lt;em&gt;&lt;/em&gt;</code> (and many more as well) are
+        <strong>inline</strong> which means that they are ordered from left to
+        right (like reading ordinary text). The normal flow for
+        <strong>inline</strong> elements is left to right, and down.
+      </p>
+      <!-- Static Position: The Default-->
+      <h2 class="body-header">Static Position: The Default</h2>
+      <p class="body-paragraph">
+        HTML elements are given a CSS of <code>position: static</code> by
+        <strong>default.</strong>
+      </p>
+      <p class="body-paragraph">
+        This means that elements appear as they are written in the HTML
+        document.
+      </p>
+
+      <p class="body-paragraph">For example:</p>
+      <p class="example"><em>HTML</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Static-HTML.png"
+        alt="screenshot of HTML"
+      />
+      <p class="example"><em>CSS</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Static-CSS.png"
+        alt="screenshot of CSS"
+      />
+      <p class="example"><em>Outcome:</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Static.png"
+        alt="screenshot of the outcome of the CSS styling on HTML"
+      />
+      <p class="body-paragraph">
+        Notice how the coloured squares are positioned from top to down as they
+        are a
+        <code>&lt;div&gt;</code>
+        HTML elements which means they are <strong>block</strong>. These squares
+        are given the CSS default position of <strong>static</strong> - as they
+        are positioned according to the Normal Flow of the document.
+      </p>
+      <!-- Relative Position-->
+      <h2 class="body-header">Relative Position</h2>
+      <p class="body-paragraph">
+        Relative position means “relative to itself” - think of it as it needs
+        to have an “anchor” so it knows where it should move in relation to. I
+        will explain further…
+      </p>
+      <p class="body-paragraph">
+        If you just give an element
+        <code>position: relative</code>
+        this will have no effect on the position, and essentially be left as
+        <code>static</code> . But if you give it <em>another</em> position
+        attribute, eg <code>left: 20px</code> , then the element will position
+        away from itself to the left RELATIVE from where it should normally be.
+      </p>
+      <p class="body-paragraph">
+        The offset of the position is based on the values of
+        <code>top</code>, <code>right</code>, <code>bottom</code>,
+        <code>left</code>, and the offset does not affect the position of the
+        other elements. The element retains its flow in the document.
+      </p>
+      <p class="body-paragraph">
+        This is useful position trick for when you want to manipulate certain
+        elements position on the page.
+      </p>
+      <p class="body-paragraph">
+        For example, I will change the <code>position</code> CSS element to
+        <code>relative</code> for the blue square and I will change the offset
+        value for <code>top</code> and <code>left</code> to see how this changes
+        the position on the webpage:
+      </p>
+      <p class="example"><em>CSS</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Relative-CSS.png"
+        alt="screenshot of CSS"
+      />
+      <p class="example"><em>Outcome:</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Relative.png"
+        alt="screenshot of the outcome of the CSS styling on HTML"
+      />
+      <p class="body-paragraph">
+        I don't know about you, but seeing the outcome first got me confused! My
+        expectation of the position was that it would move 20px up and 60px
+        left… NOOOOO. I was very wrong. Let's look at this further…
+      </p>
+      <p class="body-paragraph">Just remember how it looked:</p>
+
+      <span>
+        <p class="body-paragraph">before:</p>
+        <img
+          class="screenshot-small-img"
+          src="../images/Static.png"
+          alt="screenshot of the outcome of the CSS styling on HTML"
+        />
+        <p class="body-paragraph">and after:</p>
+        <img
+          class="screenshot-small-img"
+          src="../images/Relative.png"
+          alt="screenshot of the outcome of the CSS styling on HTML"
+        />
+      </span>
+      <p class="body-paragraph">
+        When we applied
+        <code>position:relative</code> , <code>top: 20px </code>,
+        <code>left: 60px</code>... we are saying that from it's normal position
+        we specified that it will move AWAY from the top by 20px (hence moved
+        down by 20px). We also specified that it will move AWAY from the left
+        60px (hence moved to the right).
+      </p>
+      <p class="body-paragraph">
+        Notice how the other square's positions did not get affected.
+      </p>
+      <!-- Absolute Position-->
+      <h2 class="body-header">Absolute Position</h2>
+      <p class="body-paragraph">
+        Absolute position means you can place the element any where you want it
+        by using the offset data values: <code>top</code>, <code>right</code>,
+        <code>bottom</code>, <code>left</code> The element is removed from the
+        Normal Flow of the document which means that there is no space for the
+        element in the page (like the element is no longer there).
+      </p>
+      <p class="body-paragraph">
+        The value that you set for your position will be in relation to the next
+        parent element. If there is no parent element, then it will be placed in
+        accordance to the HTML element and be placed in relation to the page
+        itself.
+      </p>
+      <p class="body-paragraph">
+        For example, let's change the position for the blue square:
+      </p>
+      <p class="example"><em>CSS</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Absolute-CSS.png"
+        alt="screenshot of CSS"
+      />
+      <p class="example"><em>Outcome</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Absolute .png"
+        alt="screenshot of outcome of CSS"
+      />
+      <p class="body-paragraph">What do we notice here?</p>
+      <ul>
+        <li>
+          I see that now the green square occupies the space where the blue
+          square was originally placed.
+        </li>
+        <li>
+          The blue square is on top of the red and green squares - as if it is
+          floating and is not in the normal flow of the document.
+        </li>
+      </ul>
+      <p class="body-paragraph">
+        Let's breakdown further how our CSS changes lead to this outcome:
+      </p>
+      <p class="body-paragraph">
+        This <strong>absolute</strong> element has no relationship with the
+        container, therefore there is no closest relative positioned parent.
+        Hence, it is positioned within the viewport (webpage). Thus value of
+        <code>top: 60px</code> and <code>left: 60px</code> means that it will
+        move 60px AWAY from the left-side of viewport (hence moved to the right
+        of the viewport) AND it will also move 60px AWAY from the top of the
+        viewport (hence moved the blue square down from the viewport).
+      </p>
+      <p class="body-paragraph">
+        To set the relationship between the blue square and container, we need
+        to apply <code>position: relative</code> to the container. This will
+        lead to:
+      </p>
+      <p class="example"><em>CSS</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Absolute-CSS2.png"
+        alt="screenshot of CSS"
+      />
+      <p class="example"><em>Outcome:</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Absolute-2.png"
+        alt="screenshot of CSS"
+      />
+      <p class="body-paragraph">
+        Notice how the blue square has moved in relation to the black border
+        (container).
+      </p>
+      <!-- Fixed Position-->
+      <h2 class="body-header">Fixed Position</h2>
+      <p class="body-paragraph">
+        Fixed position means it is positioned relative to the viewport/the
+        browser window itself, hence it does not respect any relative parents.
+        Like absolute positioning - fixed position is removed from the normal
+        document flow. The fixed element will be positioned where it is when the
+        page is scrolled because the viewport doesn’t change when the window is
+        scrolled. For example, this is useful for a navigation bar that you want
+        to be visible while a viewer scrolls the page.
+      </p>
+      <p class="body-paragraph">For example:</p>
+      <p class="example"><em>CSS</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Fixed-CSS1.png"
+        alt="screenshot of CSS"
+      />
+      <img
+        class="screenshot-img"
+        src="../images/Fixed-CSS2.png"
+        alt="screenshot of CSS"
+      />
+      <p class="example"><em>Outcome</em></p>
+      <img
+        class="screenshot-img"
+        src="../images/Fixed.png"
+        alt="screenshot of CSS"
+      />
+      <p class="body-paragraph">
+        Notice how although the container has
+        <code>position: relative</code> specified in the CSS, the blue square is
+        positioned relative to the viewport because the blue square is specified
+        by <code>position:fixed</code>. If I were to scroll this webpage down,
+        the red and green squares will disappear as it is out of the webpage
+        view, HOWEVER the blue square will remain in its position due to the
+        <strong>fixed positioning</strong> we gave it.
+      </p>
+    </div>
+    <p class="footer">Coded & Written by Trisha Emperado 👩🏻‍💻</p>
+  </body>
+</html>

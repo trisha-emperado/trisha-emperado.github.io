@@ -1,0 +1,51 @@
+/* HOME */
+.img-trisha {
+  max-width: 50%;
+  border-radius: 50%;
+}
+
+.home-title {
+  margin: 0;
+  color: #2154d3;
+  font-family: 'Arapey', serif;
+}
+
+/* WElCOME */
+.welcome {
+  margin: 0;
+  padding: 450px 100px;
+  background-color: #d7d2c7;
+}
+
+.welcome-para {
+  margin: 0;
+}
+
+/* TECHNICAL BLOG */
+.technical-blog-container {
+  margin: 0;
+  background-color: #eae3d9;
+}
+.technical-blog-title {
+  margin: 0;
+}
+
+/* CORE BLOG */
+.core-blog-container {
+  margin: 0;
+  background-color: #d7d2c7;
+}
+
+.core-blog-title {
+  margin: 0;
+}
+
+/* ALL BLOG POSTS */
+.blog-post-summary {
+  margin: 0;
+}
+
+#img-te-houutaewa {
+  max-width: 50%;
+  height: auto;
+}

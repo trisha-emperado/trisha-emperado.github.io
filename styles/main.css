@@ -1,0 +1,208 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* HOME */
+.home {
+  margin: 0 auto;
+  width: auto;
+  padding: 80px 60px 0px 70px;
+  background-color: #eae3d9;
+}
+.img-trisha {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  padding: 30px 50px 120px 50px;
+  font-size: 4vw;
+  color: #445cb7;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.arrow-down {
+  text-align: center;
+  font-size: 1.5vw;
+  color: grey;
+  margin: auto;
+  padding: 0%;
+}
+
+/* WElCOME */
+.welcome {
+  margin: 0;
+  width: auto;
+  padding: 200px 100px;
+  background-color: #d7d2c7;
+}
+
+.welcome-title {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 40px;
+  color: #445cb7;
+}
+
+.welcome-paragraph {
+  font-family: monospace;
+  line-height: 30px;
+  font-size: 15px;
+  color: #212121;
+}
+
+.welcome-footer {
+  padding: 20px 0px;
+  font-style: italic;
+  font-family: monospace;
+}
+
+/* TECHNICAL BLOG */
+.technical-blog-container {
+  margin: 0;
+  padding-bottom: 30px;
+  background-color: #eae3d9;
+}
+.the-technical-blog-title {
+  margin: 0;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: #445cb7;
+  text-align: center;
+}
+
+.tech-blog-post-ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/* CORE BLOG */
+.core-blog-container {
+  margin: 0;
+  padding-bottom: 35px;
+  background-color: #d7d2c7;
+}
+
+.core-blog-title {
+  margin: 0;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: #445cb7;
+  text-align: center;
+}
+
+.core-blog-post-ul {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+@media screen and (max-width: 62em) {
+  .core-blog-post-ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .core-blog-post-ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+/* ALL BLOG POSTS */
+li {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.blog-post-img {
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: all 250ms ease-in-out;
+}
+
+.blog-post-img:hover {
+  opacity: 0.4;
+}
+
+a:link {
+  text-decoration: none;
+}
+.single-blog-post-title {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-size: 35px;
+  font-weight: 600;
+  color: #3a3927;
+  transition: all 250ms ease-in-out;
+}
+
+.single-blog-post-title:hover {
+  color: #445cb7;
+}
+
+.blog-post-date {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px 5px 10px;
+  font-family: 'Karla';
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.blog-post-summary {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: monospace;
+  line-height: 18px;
+  color: #020100;
+}
+
+.read-more {
+  margin: 5px 0px 60px 0px;
+  padding: 10px;
+  font-size: 12px;
+  font-family: monospace, 'Arapey';
+  color: #020100;
+}
+.footer {
+  display: block;
+  margin: 0 auto;
+  background-color: #ece4d9;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Karla';
+  font-size: 12px;
+}

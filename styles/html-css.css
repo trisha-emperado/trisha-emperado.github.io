@@ -52,6 +52,8 @@ h1 {
 
 .body-header {
   margin: 0;
+  margin-left: 60px;
+  margin-right: 60px;
   font-size: 2.5em;
   font-family: 'EB Garamond', serif;
   color: #1d1c12;
@@ -62,6 +64,8 @@ h1 {
   color: #020100;
   font-size: 1.3em;
   padding: 0.7vw;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 li {
@@ -90,4 +94,17 @@ code {
 
 span {
   display: flex;
+}
+
+.example {
+  font-family: 'EB Garamond', serif;
+  color: #020100;
+  font-size: 1em;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.screenshot-img {
+  margin-left: 80px;
+  margin-right: 80px;
 }

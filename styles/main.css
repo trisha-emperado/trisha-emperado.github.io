@@ -17,16 +17,30 @@ body {
   width: 30%;
   border-radius: 50%;
 }
+@media screen and (max-width: 430px) {
+  .img-trisha {
+    width: 70%;
+  }
+  .core-blog-post-ul {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}
 
 h1 {
   margin: 0;
   padding: 30px 50px 120px 50px;
-  font-size: 4vw;
+  font-size: 40px;
   color: #445cb7;
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-style: normal;
+}
+@media screen and (max-width: 430px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 
 .arrow-down {
@@ -118,6 +132,14 @@ h1 {
   padding: 0;
   margin: 0 auto;
 }
+@media screen and (max-width: 430px) {
+  .core-blog-post-ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
 @media screen and (max-width: 62em) {
   .core-blog-post-ul {
     grid-template-columns: 1fr 1fr;

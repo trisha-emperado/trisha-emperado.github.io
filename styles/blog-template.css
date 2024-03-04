@@ -15,16 +15,12 @@ td {
   color: #1d1c12;
 }
 
-table {
-  margin-left: 120px;
-  margin-right: 120px;
-}
 /* small screen */
 @media screen and (max-width: 665px) {
   table {
     font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 }
 

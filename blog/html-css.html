@@ -76,7 +76,7 @@
         on a webpage always starts on a new line and fills up the horizontal
         space from left to right on a webpage (full width of the window). Hence,
         for a <strong>block</strong> element written on HTML followed by another
-        block element, the normal flow is top to down.
+        block element, the <strong>normal flow</strong> is top to down.
       </p>
       <p class="body-paragraph">
         While the HTML elements of
@@ -123,12 +123,13 @@
         <code>&lt;div&gt;</code>
         HTML elements which means they are <strong>block</strong>. These squares
         are given the CSS default position of <strong>static</strong> - as they
-        are positioned according to the Normal Flow of the document.
+        are positioned according to the <strong>normal flow</strong> of the
+        document.
       </p>
       <!-- Relative Position-->
       <h2 class="body-header">Relative Position</h2>
       <p class="body-paragraph">
-        Relative position means “relative to itself” - think of it as it needs
+        Relative position means “relative to itself” - think of it that it needs
         to have an “anchor” so it knows where it should move in relation to. I
         will explain further…
       </p>
@@ -147,7 +148,7 @@
         other elements. The element retains its flow in the document.
       </p>
       <p class="body-paragraph">
-        This is useful position trick for when you want to manipulate certain
+        This is a useful position trick for when you want to manipulate certain
         elements position on the page.
       </p>
       <p class="body-paragraph">
@@ -205,14 +206,15 @@
       <p class="body-paragraph">
         Absolute position means you can place the element any where you want it
         by using the offset data values: <code>top</code>, <code>right</code>,
-        <code>bottom</code>, <code>left</code> The element is removed from the
-        Normal Flow of the document which means that there is no space for the
-        element in the page (like the element is no longer there).
+        <code>bottom</code>, <code>left</code>. The element is removed from the
+        <strong>normal flow</strong> of the document which means that there is
+        no space for the element in the page (like the element is no longer
+        there).
       </p>
       <p class="body-paragraph">
         The value that you set for your position will be in relation to the next
         parent element. If there is no parent element, then it will be placed in
-        accordance to the HTML element and be placed in relation to the page
+        accordance to the HTML page and be placed in relation to the page
         itself.
       </p>
       <p class="body-paragraph">
@@ -247,7 +249,7 @@
       <p class="body-paragraph">
         This <strong>absolute</strong> element has no relationship with the
         container, therefore there is no closest relative positioned parent.
-        Hence, it is positioned within the viewport (webpage). Thus value of
+        Hence, it is positioned within the viewport (webpage). Thus the value of
         <code>top: 60px</code> and <code>left: 60px</code> means that it will
         move 60px AWAY from the left-side of viewport (hence moved to the right
         of the viewport) AND it will also move 60px AWAY from the top of the
@@ -277,13 +279,15 @@
       <!-- Fixed Position-->
       <h2 class="body-header">Fixed Position</h2>
       <p class="body-paragraph">
-        Fixed position means it is positioned relative to the viewport/the
-        browser window itself, hence it does not respect any relative parents.
-        Like absolute positioning - fixed position is removed from the normal
-        document flow. The fixed element will be positioned where it is when the
-        page is scrolled because the viewport doesn’t change when the window is
-        scrolled. For example, this is useful for a navigation bar that you want
-        to be visible while a viewer scrolls the page.
+        <strong>Fixed position</strong> means it is positioned relative to the
+        viewport/the browser window itself, hence it does not respect any
+        relative parents. Like absolute positioning -
+        <strong>fixed position</strong> is removed from the
+        <strong>normal document</strong>
+        flow. The <strong>fixed</strong> element will be positioned where it is
+        when the page is scrolled because the viewport doesn’t change when the
+        window is scrolled. For example, this is useful for a navigation bar
+        that you want to be visible while a viewer scrolls the page.
       </p>
       <p class="body-paragraph">For example:</p>
       <p class="example"><em>CSS</em></p>
@@ -309,7 +313,7 @@
         positioned relative to the viewport because the blue square is specified
         by <code>position:fixed</code>. If I were to scroll this webpage down,
         the red and green squares will disappear as it is out of the webpage
-        view, HOWEVER the blue square will remain in its position due to the
+        view, HOWEVER, the blue square will remain in its position due to the
         <strong>fixed positioning</strong> we gave it.
       </p>
     </div>

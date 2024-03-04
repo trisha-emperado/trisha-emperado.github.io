@@ -3,6 +3,30 @@ body {
   margin: 0;
   padding: 0;
 }
+/* table */
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 15px;
+  font-family: 'EB Garamond', serif;
+  color: #1d1c12;
+}
+
+table {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+/* small screen */
+@media screen and (max-width: 665px) {
+  table {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 .header-top-space {
   margin: 0;
@@ -71,10 +95,6 @@ h1 {
   color: #1d1c12;
   text-align: center;
   font-weight: 500;
-}
-
-hr {
-  color: #9e8048;
 }
 
 .body {

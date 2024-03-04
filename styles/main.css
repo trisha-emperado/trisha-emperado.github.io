@@ -20,7 +20,7 @@ body {
 /* small screen */
 @media screen and (max-width: 665px) {
   .img-trisha {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -173,7 +173,7 @@ li {
 
 .blog-post-img {
   width: 300px;
-  height: 250px;
+  height: 220px;
   display: block;
   margin: 0 auto;
   border-radius: 15px;
@@ -182,8 +182,8 @@ li {
 /*small screen*/
 @media screen and (max-width: 665px) {
   .blog-post-img {
-    width: 200px;
-    height: 150px;
+    width: 280px;
+    height: 200px;
   }
 }
 

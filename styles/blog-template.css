@@ -13,14 +13,16 @@ td {
   padding: 15px;
   font-family: 'EB Garamond', serif;
   color: #1d1c12;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* small screen */
 @media screen and (max-width: 665px) {
   table {
     font-size: 16px;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -97,6 +99,12 @@ h1 {
   margin: 0;
   padding: 40px;
   background-color: #d7d2c7;
+}
+/* small screen */
+@media screen and (max-width: 665px) {
+  .body {
+    padding: 15px;
+  }
 }
 
 .body-header {

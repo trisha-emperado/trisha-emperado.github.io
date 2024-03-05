@@ -19,8 +19,8 @@ td {
 @media screen and (max-width: 665px) {
   table {
     font-size: 16px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
   }
 }
 
@@ -101,6 +101,7 @@ h1 {
 
 .body-header {
   font-size: 25px;
+  font-weight: 500px;
   padding: 10px 100px 10px 100px;
   font-family: 'EB Garamond', serif;
   color: #020100;

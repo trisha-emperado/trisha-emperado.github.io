@@ -126,7 +126,7 @@ h1 {
 .body-paragraph {
   font-family: 'EB Garamond', serif;
   color: #020100;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   padding: 0px 100px 20px 100px;
 }
@@ -141,7 +141,7 @@ h1 {
 li {
   font-family: 'EB Garamond', serif;
   color: #020100;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   margin-left: 120px;
   margin-right: 120px;
@@ -164,4 +164,19 @@ li {
   text-align: center;
   font-family: 'Karla';
   font-size: 12px;
+}
+
+code {
+  margin: 0;
+  padding: 6px;
+  font-size: 0.8em;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  font-family: Consolas;
+}
+
+.screenshot-img {
+  padding: 0px 100px 20px 100px;
+  display: flex;
+  flex-direction: column;
 }

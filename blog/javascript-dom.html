@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/blog-template.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="icon"
+      href="images/trisha-emoji-icon.png"
+      type="image/icon type"
+    />
+    <!--Arapey Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Playfair Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--EB Garamond Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Karla Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Javascript Fundamentals</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header-top-space"></div>
+    <div class="header-container">
+      <h1>Javascript Fundamentals</h1>
+      <img
+        class="header-img"
+        src="../images/JS-Dom-4.jpg"
+        alt="bistro in france taken on film, it is a little blurry"
+      />
+      <p class="blog-date">MARCH 16, 2024</p>
+    </div>
+    <!-- Analogy: JS, HTML AND CSS Relationship-->
+    <div class="body">
+      <h2 class="body-header">
+        Welcome to The Webpage Restaurant: An Analogy To Describe The
+        Relationship Between Javascript, HTML, and CSS
+      </h2>
+      <p class="body-paragraph">
+        Here at The Webpage Restaurant, we have the <strong>building</strong>,
+        the <strong>styling</strong>, and the
+        <strong>staff in the restaurant</strong>. <br />
+        <br />
+        Let explain their relationship further:
+      </p>
+      <ul>
+        <li>
+          HTML is the building - structure of the page. In the Webpage
+          Restaurant this is the foundation, pillars, rooms - kitchen, pantry,
+          office, toilets, private dining rooms etc.
+        </li>
+        <li>
+          CSS is the styling - styling of the page. This is like the curtains,
+          paint/wallpaper on the walls, light fixtures, colour of plates, type
+          of tiles in toilets etc. in our restaurant.
+        </li>
+        <li>
+          Javascript is the people in the restaurant making it run and “feel”
+          alive! - makes the webpage dynamic and interactive. For example,
+          without the staff such as the chefs, waiters - it’s just an empty
+          shell of a restaurant. So let’s make it more interactive and dynamic,
+          let’s add a staff to greet customers when they come in, head-chef and
+          sous-chef, and all the chefs to cook the food, waiters to clean and
+          take orders. See how Javascript gives functionality to The Webpage
+          Restaurant.
+        </li>
+      </ul>
+      <!-- Describe what the DOM is and an example of how you might interact with it.-->
+      <h2 class="body-header">What is the DOM?</h2>
+      <p class="body-paragraph">
+        <em>DOM DOM DOOOOOOOOOOM *cymbals crashing wildly* </em>
+        <br />
+        <br />
+        The Document Object Model (DOM) was something I just couldn't get my
+        head around at first. But fear not, if I can understand it, you can too.
+        <br />
+        <br />
+        We can only get to understand the DOM once we really start learning
+        about Javascript.
+      </p>
+      <p class="body-paragraph">
+        Let's begin with an analogy: How I like to think of the DOM and how one
+        will be interacting with it is (in the most simple way possible)… I
+        think of the DOM as the “translator” between two people speaking two
+        different foreign languages. It is a very smart translator because it
+        can take what was said from another language and lay out all the
+        information such as context, slang, tone, meaning of each word (even
+        hidden information that was not explicitly said, but expressed in
+        conveying that sentence) in order that the other person can comprehend,
+        process and make use of it.
+      </p>
+      <p class="body-paragraph">
+        DOM is Application Programming Interface (API), not another coding
+        language. API means that it is a way for a coding language to “talk” to
+        another coding language. Because HTML is a different language to
+        Javascript, they need an API so that they can “talk” to each other. That
+        is when the DOM comes in to play.
+      </p>
+      <p class="body-paragraph">
+        The DOM allows for Javascript to access, add, remove, make changes to
+        HTML and CSS.
+      </p>
+      <p class="body-paragraph">
+        <strong><u>How exactly does the DOM do this?</u></strong>
+        <br />
+        <br />
+        It takes the entire HTML document, translates all the content (even all
+        the hidden information such as spaces and new lines), and
+        <strong>represents</strong> it into standardised objects. It must be
+        standardised so that any scripting language, such as Javascript, can
+        access and modify the HTML.
+        <br />
+        <br />
+        The DOM is not a copy of the HTML file, it’s just a different way to
+        organise the HTML information. For example, you are looking at this web
+        page, my blog entry, in your browser. What you are currently seeing is a
+        visual representation of the underlying HTML - it’s a way for YOU to
+        comprehend the HTML. The DOM, on the other hand, represents the HTML
+        document differently as objects so that scripting languages can
+        comprehend (and modify) it.
+        <br />
+        <br />
+        The key word here is <strong>representation</strong>.
+        <br />
+        <br />
+        The DOM is constructed as a tree of objects with hierarchy. Every object
+        is under another object, and any object can have multiple children but
+        only one parent. If you remove an object from the DOM, all of it’s
+        children will also be removed - because each object “possesses” it’s
+        children.
+      </p>
+      <!-- Explain control flow and loops using an example process from everyday life, for example, 'waking up' or 'brushing your teeth' (but not those).-->
+      <h2 class="body-header">
+        Let's Talk About <code>Control Flow</code> & <code>Loops</code>
+      </h2>
+      <p class="body-paragraph">
+        Computers can run instructions, but they cannot make decisions on their
+        own. That’s when we, the programmers, come in! We give computers
+        instructions AND give them conditions to use for each set of
+        instruction.
+      </p>
+      <p class="body-paragraph">
+        <strong><u>Control Flow:</u></strong>
+      </p>
+      <p class="body-paragraph">
+        In Javascript it is the order in which the computer runs the full script
+        of code. Javascript executes code sequentially meaning it will begin
+        from the first line of code and ends at the last line of code, unless
+        the computer hits any statement that changes the course of the control
+        flow (which happens very frequently).
+      </p>
+      <p class="body-paragraph">
+        The constructs or statements that change the flow of control are:
+      </p>
+      <ul>
+        <li>
+          Conditional - code executed based on the evaluation of conditions.
+          Also known as <em>selection</em> constructs.
+        </li>
+        <li>
+          Iterative - code executed <em>repetitively</em> based on the
+          evaluation of conditions. Also known as <em>looping</em> constructs.
+        </li>
+      </ul>
+      <p class="body-paragraph">
+        <strong><u>Analogy example of Control Flow:</u></strong>
+      </p>
+      <p class="body-paragraph">
+        Let’s go back to our example of the restaurant and we are the first
+        person to open and prepare The Webpage Restaurant. A bit of context to
+        the restaurant - it’s opening hours are:
+      </p>
+      <ul>
+        <li>Monday - Thursday: 6pm - 10pm (serves dinner only)</li>
+        <li>Friday - Sunday: 11am - 10PM (serves lunch and dinner)</li>
+      </ul>
+      <p class="body-paragraph">
+        We are given a set of instructions to follow before we can open the
+        restaurant for customers to come in:
+      </p>
+      <img
+        class="screenshot-img"
+        src="../images/JS-Dom-1.png"
+        alt="screenshot of instructions"
+      />
+
+      <p class="body-paragraph">
+        It’s a simple analogy, but the Control Flow is going from instruction
+        number one, two, then three. Notice how for each set of instructions
+        there are constructs that give them an evaluation of conditions and for
+        each condition there is an instruction. The person reads the first set
+        of instructions at the counter, then walk over to the light switch and
+        based on the condition will execute the instruction or not, and walk
+        back to the instructions at the counter and then follows the next set of
+        instructions, and so forth.
+      </p>
+      <p class="body-paragraph">
+        Just like our analogy, the control flow in Javascript reads and executes
+        code from top to bottom, reading each line of code from the first to the
+        end, but for each line of code there can be conditionals or loops that
+        can change it’s course.
+      </p>
+      <p class="body-paragraph">
+        Understanding Control Flow is important for writing efficient Javascript
+        coding. For example, with our analogy above, if the ‘light switch’
+        instruction was <em>after</em> the ‘patio doors’ instruction and it was
+        a Thursday (serving dinner only in the evening), then it wouldn’t be
+        efficient instructions trying to walk to the doors in a dim lit room
+        first thing - with our hands stretched out trying to make sure we don’t
+        bump into things, and our eyes trying to make sense of what is around
+        us. We would be faster to have the lights on to fully see what is in our
+        way to the doors, and hence it is better to have these instructions
+        first. Just like with programming, we must think of the best way to
+        organise our Javascript code so that it is efficient and readable.
+      </p>
+      <p class="body-paragraph">
+        <strong
+          ><u>What are <code>loops</code>?</u></strong
+        >
+      </p>
+      <p class="body-paragraph">
+        In Javascript, loops are a block of code that is executed and repeated
+        again and again, based on the conditions. It will continue to loop
+        through the block of code until the condition returns
+        <code>false</code> or if there is nothing left to loop over.
+      </p>
+      <p class="body-paragraph">
+        Let’s go back to our Webpage Restaurant analogy to explain this in an
+        “every day” setting:
+      </p>
+      <p class="body-paragraph">
+        It is a Friday, and we are put on the shift to be the first person to
+        open the restaurant and prepare before any customers can come through
+        the door. We go through the opening instructions, and end up at
+        instruction three:
+      </p>
+      <p class="body-paragraph">
+        It is a Friday, and we are put on the shift to be the first person to
+        open the restaurant and prepare before any customers can come through
+        the door. We go through the opening instructions, and end up at
+        instruction three:
+      </p>
+      <img
+        class="screenshot-img"
+        src="../images/JS-Dom-2.png"
+        alt="screenshot of instructions"
+      />
+      <p class="body-paragraph">
+        Let's say it is 10AM and hence we begin preparing the lunch menu
+        booklets. Our task now is to take the stack of menu booklets, starting
+        from the first booklet, we open each one and replace the dinner menu
+        with the lunch menu, then we close it, put it down, then we open the
+        second menu and repeat this again and again until we reach the end of
+        the stack of menus (when there is nothing to loop over). This is what
+        looping is in Javascript, a task that is repeated or in programming
+        language they say it is a task that can be <em>iterated</em>.
+      </p>
+      <p class="body-paragraph">
+        The traditional <code>for</code> loop looks something like this:
+      </p>
+      <img
+        class="screenshot-img"
+        src="../images/JS-Dom-3.png"
+        alt="screenshot of loop code example"
+      />
+      <ul>
+        <li>
+          <strong>initialExpression:</strong> it initialises the loop. Really,
+          it’s how many times has it gone through the loop before the execution
+          of the first loop. Usually, it is zero. I like to think of
+          <code>let i = 0</code> as saying “let’s begin our count at zero”.
+        </li>
+        <li>
+          <strong>condition:</strong> this is when the condition is evaluated.
+          The statement or code in the loop will be executed when the evaluation
+          of the condition is <code>true</code>. When it is <code>false</code>,
+          the loop is terminated. In our example,
+          <code>i < menus.length</code> , I like to think of it as saying “let
+          us loop through each menu till we reach the end of the stack of
+          menus”.
+        </li>
+        <li>
+          <strong>updateExpression:</strong> this is executed after each
+          iteration of the loop. In our example, <code>i++</code> is saying
+          “after executing the condition, open the next menu in the stack”.
+          Another example I like to think of is telling us “what do I do next
+          after each executed loop?”, we then answer by telling the loop to
+          <code>i++</code> -
+          <em>to go to the next loop and do the task again.</em>
+        </li>
+      </ul>
+      <p class="body-paragraph">
+        Other loops could be: <code>for…in</code> , <code>for…of</code> ,
+        <code>ForEach()</code>.
+      </p>
+      <!-- Difference between accessing arrays and objects-->
+      <h2 class="body-header">
+        Arrays and Objects : How Do We Access Their Data?
+      </h2>
+      <p class="body-paragraph">
+        Arrays and Objects are ways in Javascript to collect and store data.
+        Both are similar in that they
+        <u>mutable</u> variables meaning they are able to be changed in value.
+      </p>
+
+      <p class="body-paragraph">
+        Arrays stores a list of data known as
+        <strong>elements</strong>. Arrays use zero-based indexing meaning the
+        first item is given an index of 0, then the second item one, and so
+        forth.
+      </p>
+      <p class="body-paragraph">
+        Objects store collections of data known as
+        <strong>properties</strong> - which consist of <strong>keys</strong> and
+        <strong>values</strong>.
+      </p>
+      <p class="body-paragraph">
+        <u><strong>Let’s show Arrays and Objects as examples:</strong></u>
+      </p>
+      <p class="body-paragraph">
+        Arrays in our Webpage Restaurant could be our grocery list, and in code
+        this will look like this:
+        <br />
+        <code>let groceryList = ['onion', 'flour', 'tomato', 'wine'];</code>
+        <br />
+        <br />
+        Objects in our Webpage Restaurant could look like profiles we have for
+        each staff we have. <em>Por ejemplo</em>:
+        <br />
+        <br />
+        <code
+          >let staff = { <br />
+          name: 'Mary',<br />
+          age: 51, <br />
+          canCook: true; <br />
+          };</code
+        >
+        <br />
+        <br />
+        In the above example,
+      </p>
+      <ul>
+        <li>object is <code>staff</code></li>
+        <li>
+          key is <code>name</code>, <code>age</code>, <code>conCook</code>
+        </li>
+        <li>
+          value is <code>'Mary</code>, <code> 51</code>, <code>true</code>
+        </li>
+      </ul>
+      <p class="body-paragraph">
+        <u
+          ><strong>
+            There are differences in how we can access data from arrays and
+            objects:
+          </strong></u
+        >
+      </p>
+      <p class="body-paragraph">
+        <em>ARRAYS</em>
+      </p>
+      <p class="body-paragraph">
+        For arrays we can access elements using square brackets <code>[]</code>.
+        For example to retrieve the item number 3 from our grocery list, the
+        line of code would look like:<br />
+        <code>groceryList[3]; // returns 'wine' </code>. <br />Remember that
+        zero-based indexing is used for array hence returned element is ‘wine’.
+      </p>
+      <p class="body-paragraph">
+        Arrays can also have elements added and removed from the beginning or
+        end of the array using <code>push()</code> to add items at the end of an
+        array, <code>pop()</code> to remove the last item from the array,
+        <code>unshift()</code> to add items to the beginning of an array, and
+        <code>shift()</code> to remove the first item from an array.
+        <br />
+        <br />
+        Arrays can also be iterated through using the <code>for</code> loop,
+        <code>for...in</code> , <code>for...of</code>, and
+        <code>ForEach()</code> .
+      </p>
+      <p class="body-paragraph">
+        <em>OBJECTS</em>
+      </p>
+      <p class="body-paragraph">
+        Accessing data from objects, we use either the <strong>dot</strong>
+        <code>.</code> notation OR the <strong>square bracket</strong>
+        <code>[]</code>notation.
+      </p>
+      <p class="body-paragraph">
+        ▸ Example One - get the value of a key from an object using both dot
+        notation OR square brackets:
+        <br />
+        <code
+          >//dot notation:
+          <br />
+          staff.age // returns 51</code
+        >
+        <br />
+        <br />
+        <code
+          >//square bracket notation:
+          <br />
+          staff['age'] // returns 51</code
+        >
+        <br />
+        <br />
+        ▸ Example Two - change the value of a key from an object using dot
+        notation only:
+        <br />
+        <code> staff.name = Augustine </code>
+        <br />
+        <br />
+
+        ▸ Example Three - add a new property to the object using dot notation
+        only:
+        <br />
+        <code>
+          staff.medicalConditions = ['allergic to peanuts', 'sleep apnea',
+          'diabetes'];</code
+        >
+        <br />
+        <br />
+        ▸ Example Four: to delete a property from an object using the
+        <code>delete</code> operator:
+        <br />
+        <code> delete staff.canCook </code>
+      </p>
+      <p class="body-paragraph">
+        Objects can also be iterated through however using only the
+        <code>for...in</code>, <code>for...of</code>, and
+        <code>ForEach</code> loop. If we wanted to use the <code>for</code> loop
+        for objects, we first would need to create a variable that has the value
+        of going through the object and grabbing the keys and values.
+        <br />
+        For example, we would first create a variable that goes through our
+        object :<br />
+        <code>let staffNames = Object.keys(staff) </code>.<br />
+        Notice how the ‘Object’ began with a capital ‘O'. Now we can create a
+        traditional for loop statement for the object .
+      </p>
+      <!-- Explain what functions are and why they are helpful-->
+      <h2 class="body-header">
+        What Are <code>functions</code>? Why Are They Helpful?
+      </h2>
+      <p class="body-paragraph">
+        Functions are code in Javascript that is written to perform a specific
+        task. Functions always have an input and a return output. It is helpful
+        because it can be reused, meaning they can be called anywhere in your
+        program which allows you to not write the same code again and again. You
+        can use the function just by a single short command, rather than typing
+        whole block of code again.
+        <br />
+        <br />
+        Functions must first be defined. The simple way they are defined is
+        using this basic syntax:
+        <br />
+        <code
+          >function functionName(parameter) { <br />//statements <br />}
+        </code>
+        <br />
+        <br />
+        Just because we defined a function doesn’t mean it will be called!
+        Remember to call the function in your script of code. The simple way to
+        do this is by writing the name of the function with <code>()</code> .
+        For example:
+        <br />
+        <code>functionName() </code>
+      </p>
+      <!-- FOOTER -->
+    </div>
+    <p class="footer">Coded & Written by Trisha Emperado 👩🏻‍💻</p>
+  </body>
+</html>

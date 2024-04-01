@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/blog-template.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+    <link
+      rel="icon"
+      href="images/trisha-emoji-icon.png"
+      type="image/icon type"
+    />
+    <!--Arapey Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Playfair Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--EB Garamond Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Karla Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Problem Solving</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header-top-space"></div>
+    <div class="header-container">
+      <h1>Dear Friend, I Have A Problem...</h1>
+      <img
+        class="header-img"
+        src="../images/te-whare-1.jpeg"
+        alt="bistro in france taken on film, it is a little blurry"
+      />
+      <p class="blog-date">APRIL 1, 2024</p>
+    </div>
+    <div class="body">
+      <!-- Intro-->
+      <p class="body-paragraph">
+        I’m okay, truly, but I just experienced lots of problems in the recent
+        sprint I did and I want to share this with you.
+      </p>
+      <p class="body-paragraph">
+        I was able to learn about testing, problem solving, pseudocoding, and
+        was able to practice and learn more about Javascript during this Sprint.
+        However… it was challenging and faced lots of problems. Let me
+        elaborate.
+      </p>
+      <!-- SIMPLE PROBLEM -->
+      <h2 class="body-header">I was blocked on a simple problem…</h2>
+      <p class="body-paragraph">
+        It was the JS Olympics and I was at Event 2 (‘Jumble Your Words’
+        challenge). The task was to create a function to reverse a string. I
+        thought I had written an elegant piece of code that was correct.
+        <br />
+        <br />
+        Here is what I initially wrote:
+      </p>
+      <pre> 
+      <code> 
+        function unjumble(s) {
+          return s.split(' ').reverse().join(' ')
+        }
+      </code>
+    </pre>
+      <p class="body-paragraph">However, the correct code was:</p>
+      <pre> 
+        <code> 
+          function unjumble(s) {
+            return s.split('').reverse().join('')
+          }
+        </code>
+      </pre>
+      <p class="body-paragraph">
+        Notice the difference? It’s very hard to spot, but where I went wrong
+        was how I wrote the <code>' '</code>. What I had written was
+        <code>' '</code> which was splitting the string by space, but the
+        correct way was to split by character <code>''</code> ! I didn’t even
+        notice I was doing this, hence the test was passing a FAIL.
+      </p>
+      <p class="body-paragraph">
+        Because I thought I had written a very good piece of code, I knew it was
+        going to be a simple fix and I was just missing one simple thing. So I
+        went to chatGPT to tell me quickly what I was doing wrong, and that’s
+        when it told me what the problem was. Then my eyes were open and I could
+        see where I went wrong.
+      </p>
+      <p class="body-paragraph">
+        It was extremely frustrating process to try and see what I was doing
+        wrong. I had to read the instructions multiple times (and slowly too),
+        read my code repetitively, look at the test files, and just try
+        something new, but to no avail - my code was not passing.
+      </p>
+      <p class="body-paragraph">
+        I had to learn through this very simple problem to never overlook the
+        little things. Sometimes, it is in the smallest spelling mistake or
+        missing characters where the code is going wrong. I definitely had to
+        also learn a lot of patience during this time.
+      </p>
+      <hr />
+      <!-- ELEGANT PROBLEM -->
+      <h2 class="body-header">
+        In saying that, I also elegantly solved a problem…
+      </h2>
+      <p class="body-paragraph">
+        I think I came victorious with the next event in the JS Olympics
+        challenge (Event 3 - ‘Odds Out’) because I believe I solved the problem
+        a little more elegantly than my experience from the event before.
+      </p>
+      <p class="body-paragraph">
+        The problem was to write a function that accepted an array of numbers
+        and return an array with only the even numbers.
+      </p>
+      <p class="body-paragraph">
+        I first read the instructions and thought okay… "how do I want to write
+        this code based on what I just learnt in the Kata Challenges?". I kind
+        of did my own pseudocode, but in my head. I knew I wanted to use the
+        <code>.filter()</code> built-in Javascript method and use the
+        <cdde>%</cdde> remainder operator. And with learning that
+        <code>.filter()</code> takes only <code>true</code> statements to remain
+        and <code>false</code> statements to be filtered out, I knew I wanted to
+        make sure that the <cdde>%</cdde> remainder operator resulting in a
+        strictly true statement in order for even numbers to remain. And the
+        first block of code I typed passed all the tests!
+      </p>
+      <p class="body-paragraph">
+        I felt extremely gratified when I saw that I passed the test all in one
+        go. I think learning to be careful with reading the instructions,
+        planning beforehand how you want to type the code before panic googling
+        for a solution, and being patient, helped a lot with this elegant
+        problem-solving that I experienced.
+      </p>
+      <hr />
+      <!-- REFLECT ON PROBLEM-SOLVING TECHNIQUES-->
+      <h2 class="body-header">Let me reflect on problem-solving techniques:</h2>
+      <p class="body-paragraph">
+        <em>Pseudocode</em>
+        <br />
+        <br />
+        I feel confident using this as it doesn’t require you to have an
+        extensive knowledge of programming before using this technique. That is
+        because it’s like creating a plan of how you want your code to look like
+        before writing the code.
+      </p>
+
+      <p class="body-paragraph">
+        <em>Trying Something</em>
+        <br />
+        <br />
+        Sometimes you just have to write something to begin. It can be a good
+        beginning to writing code but it can be confusing if you are unsure as
+        what you’re doing.
+      </p>
+      <p class="body-paragraph">
+        <em>Rubber Ducky Method & Improving your process with reflection</em>
+        <br />
+        <br />
+        This was a helpful trick at concreting new information that I got to
+        learn. All of the problems I solved, I explained each piece of code and
+        reflected through my online notes/journal which was not only helping at
+        ingraining new concepts, but also I could turn back to my notes when I
+        forgot what certain things did or if I wanted to use the methods again
+        in my new piece of code.
+      </p>
+      <p class="body-paragraph">
+        <em>Reading Error Messages</em>
+        <br />
+        <br />
+        This was extremely helpful when I wanted to see if the problems were
+        related to syntax or spelling mistakes.
+      </p>
+      <p class="body-paragraph">
+        <em>Console.logging</em>
+        <br />
+        <br />
+        I have to be honest in that I’m the best at using this technique. I
+        relied a lot at reading the test files whether my code passed or not,
+        and never used console.log() . It is something I want to learn so I can
+        use it as a problem-solving tool for future challenges. I’m sure it was
+        created for a helpful reason so I want to use this technique more.
+      </p>
+      <p class="body-paragraph">
+        <em>Googling</em>
+        <br />
+        <br />
+        I had to rely a lot on googling as I was stuck on each challenge most of
+        the time. I think I am able to write efficient questions on google to
+        make sure related links were coming up for me. chatGPT I found helpful
+        when asking specific questions when I couldn’t find the answer from
+        google or got confused with the multiple different sources that google
+        provided.
+      </p>
+      <!-- REFLECT ON ASKING FOR HELP-->
+      <h2 class="body-header">
+        Asking Peers For Help & Asking Coaches For Help
+      </h2>
+      <p class="body-paragraph">
+        This is something that I am very bad at. I get very shy using the
+        help-desk in Discord and I know I need to utilise this more as that is
+        what my peers and coaches are there for.
+        <br />
+        <br />
+        The reluctance mainly comes from thinking my question is a “silly” or
+        “simple” question. So I think there is surely an answer out in the web
+        instead of showing my vulnerabilities on the help-desk. But this is such
+        a negative mindset and I want to be more confident at asking questions
+        in Discord. I also usually study at strange hours (due to my shift work)
+        or in big study blocks, so I usually need an answer immediately in order
+        to move forward with my goal of study for that block.
+      </p>
+    </div>
+    <p class="footer">Coded & Written by Trisha Emperado 👩🏻‍💻</p>
+  </body>
+</html>

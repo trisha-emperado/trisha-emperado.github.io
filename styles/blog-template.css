@@ -128,8 +128,9 @@ h1 {
   color: #020100;
   font-size: 21px;
   line-height: 28px;
-  padding: 0px 100px 20px 100px;
+  padding: 0px 100px 15px 100px;
 }
+
 /* small screen */
 @media screen and (max-width: 665px) {
   .body-paragraph {
@@ -175,6 +176,10 @@ code {
   background-color: #eeeeee;
   border-radius: 10px;
   font-family: Consolas;
+}
+
+pre {
+  margin: 0 auto;
 }
 
 .screenshot-img {

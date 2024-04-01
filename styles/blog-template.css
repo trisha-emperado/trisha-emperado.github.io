@@ -117,7 +117,7 @@ h1 {
 /* small screen */
 @media screen and (max-width: 665px) {
   .body-header {
-    font-size: 20px;
+    font-size: 23px;
     line-height: 24px;
     padding: 5px;
   }
@@ -133,7 +133,7 @@ h1 {
 /* small screen */
 @media screen and (max-width: 665px) {
   .body-paragraph {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     padding: 5px;
   }
@@ -196,4 +196,42 @@ hr {
   color: #999;
   height: 1px;
   margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #273d22;
+  color: #ebdecc;
+  display: block;
+  margin: auto;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  padding: 20px 24px;
+  margin: 10px auto;
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: #813409;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
